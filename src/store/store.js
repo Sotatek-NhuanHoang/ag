@@ -15,13 +15,14 @@ import Router from '../Router';
 
 // Reducers
 import globalReducer from './global/reducer';
+import i18nReducer from './i18n/reducer';
 const navReducer = createNavigationReducer(Router);
 
 
 const reducers = combineReducers({
     global: globalReducer,
     nav: navReducer,
-    // i18n: i18n,
+    i18n: i18nReducer,
 });
 
 const navMiddleware = createReactNavigationReduxMiddleware(

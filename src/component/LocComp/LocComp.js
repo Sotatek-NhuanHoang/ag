@@ -39,8 +39,7 @@ LocComp.propTypes = {
 
 
 const mapStateToProps = ({ i18n }) => ({
-    // locale: i18n.locale,
-    // version: i18n.version,
+    locale: i18n.locale,
 });
 
 export default connect(mapStateToProps)(LocComp);

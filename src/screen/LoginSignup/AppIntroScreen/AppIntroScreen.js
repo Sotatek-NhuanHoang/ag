@@ -15,19 +15,7 @@ export class AppIntroScreen extends PureComponent {
     }
 
     componentDidMount() {
-        GlobalService.showModal(
-            <View>
-                <Text>Honag Duc Nhuan</Text>
-            </View>
-        );
 
-        setTimeout(() => {
-            GlobalService.showModal(
-                <View>
-                    <Text>Meo meo</Text>
-                </View>
-            );
-        }, 2000);
     }
 
     render() {
